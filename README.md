@@ -1,5 +1,5 @@
-# React homework template
+<!-- # React homework template
 
-# Library Spinner
+# Library Spinner -->
 
 //npm install react-loader-spinner; //npm install notiflix
