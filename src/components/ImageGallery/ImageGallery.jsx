@@ -9,7 +9,7 @@ export const ImageGallery = ({ imageGalleryItems, itemOnClick }) => {
         <ImageGalleryItem
           key={imageGalleryItem.id}
           largeImageLink={imageGalleryItem.largeImageURL}
-          imageLink={imageGalleryItem.webformatURL}
+          imageLink={imageGalleryItem.webFormatURL}
           onClick={itemOnClick}
         />
       ))}
