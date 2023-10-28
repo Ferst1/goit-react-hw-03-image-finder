@@ -83,6 +83,7 @@ export class App extends Component {
           />
         )}
         <Searchbar submitFunction={this.getSearchResults} />
+
         {this.state.isLoading && <Loader />}
         <ImageGallery
           imageGalleryItems={this.state.images}
