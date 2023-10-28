@@ -1,13 +1,11 @@
 import { Component } from 'react';
 import Notiflix from 'notiflix';
-
 import { Searchbar } from './Searchbar/Searchbar.jsx';
-
 import { Modal } from './Modal/Modal';
 import { ImageGallery } from './ImageGallery/ImageGallery.jsx';
 import { Button } from './Button/Button';
 import { Loader } from './Loader/Loader';
-import { fetchImages } from '../helper/fetchimages';
+import { fetchImages } from './service/fatch-service.js';
 
 export class App extends Component {
   state = {
