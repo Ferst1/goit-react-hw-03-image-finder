@@ -1,6 +1,6 @@
 import { ImageGalleryItem } from '../ImageGalleryItem/ImageGalleryItem';
 import propTypes from 'prop-types';
-import { ImageGalleryList } from './ImageGallary.styled';
+import { ImageGalleryList } from './ImageGallery.styled';
 
 export const ImageGallery = ({ imageGalleryItems, itemOnClick }) => {
   return (
@@ -9,7 +9,7 @@ export const ImageGallery = ({ imageGalleryItems, itemOnClick }) => {
         <ImageGalleryItem
           key={imageGalleryItem.id}
           largeImageLink={imageGalleryItem.largeImageURL}
-          imageLink={imageGalleryItem.webFormatURL}
+          imageLink={imageGalleryItem.webformatURL}
           onClick={itemOnClick}
         />
       ))}

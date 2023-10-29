@@ -1,14 +1,12 @@
 import { Component } from 'react';
 import propTypes from 'prop-types';
-import { SearchForm, SearchHeader } from './Searchbar';
+import { SearchForm, SearchHeader } from './Searchbar.styled';
 
 export class Searchbar extends Component {
   enterSearchData = event => {
     event.preventDefault();
-
     const searchData = event.currentTarget.elements.searchInput.value;
     this.props.submitFunction(searchData);
-
     event.currentTarget.reset();
   };
 

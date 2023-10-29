@@ -1,15 +1,16 @@
-import { Hourglass } from 'react-loader-spinner';
+import { Watch } from 'react-loader-spinner';
 
 export function Loader() {
   return (
-    <Hourglass
-      visible={true}
+    <Watch
       height="80"
       width="80"
-      ariaLabel="hourglass-loading"
+      radius="48"
+      color="#4fa94d"
+      ariaLabel="watch-loading"
       wrapperStyle={{}}
-      wrapperClass=""
-      colors={['#306cce', '#121821']}
+      wrapperClassName=""
+      visible={true}
     />
   );
 }

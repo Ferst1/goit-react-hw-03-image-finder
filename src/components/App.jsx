@@ -1,11 +1,13 @@
 import { Component } from 'react';
 import Notiflix from 'notiflix';
-import { Searchbar } from './Searchbar/Searchbar.jsx';
+
+import { Searchbar } from './Searchbar/Searchbar';
+
 import { Modal } from './Modal/Modal';
-import { ImageGallery } from './ImageGallery/ImageGallery.jsx';
+import { ImageGallery } from './ImageGallery/ImageGallery';
 import { Button } from './Button/Button';
 import { Loader } from './Loader/Loader';
-import { fetchImages } from './service/fatch-service.js';
+import { fetchImages } from '../services/fetchImages';
 
 export class App extends Component {
   state = {
@@ -81,7 +83,6 @@ export class App extends Component {
           />
         )}
         <Searchbar submitFunction={this.getSearchResults} />
-
         {this.state.isLoading && <Loader />}
         <ImageGallery
           imageGalleryItems={this.state.images}

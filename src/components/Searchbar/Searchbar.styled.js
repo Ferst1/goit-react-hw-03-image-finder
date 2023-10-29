@@ -68,8 +68,4 @@ export const SearchForm = styled.form`
     font: inherit;
     font-size: 18px;
   }
-  img {
-    width: 30px;
-    height: 30px;
-  }
 `;

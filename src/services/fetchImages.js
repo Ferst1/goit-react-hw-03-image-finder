@@ -9,7 +9,7 @@ async function fetchImages(searchResult, pageNumber) {
     page: pageNumber,
     key: API_KEY,
     image_type: 'photo',
-    orientation: 'horizontal',
+    oreintation: 'horizontal',
     per_page: 12,
   });
 
